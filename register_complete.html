@@ -80,7 +80,7 @@
 				<li class="nav-item"><a href="speakers.html" class="nav-link text-white">Speakers</a></li>
 				<li class="nav-item"><a href="program.html" class="nav-link text-white">Program</a></li>
 				<li class="nav-item"><a href="register_complete.html" class="nav-link text-white">Registration</a></li>
-				<li class="nav-item"><a href="participants.html" class="nav-link text-white">Participants</a></li>
+				<li class="nav-item"><a href="registered_participants.html" class="nav-link text-white">Participants</a></li>
 				<li class="nav-item"><a href="abstracts.html" class="nav-link text-white">Abstracts</a></li>
 				<li class="nav-item"><a href="topics.html" class="nav-link text-white">Topical collections</a></li>
 				<li class="nav-item"><a href="prizes.html" class="nav-link text-white">Prizes</a></li>
@@ -102,185 +102,14 @@
 		</div>
 	</section>
 	
-	<p class="lead" align="center"><span class="h5">The registration is opened now! </span><span class="badge bg-success">NEW</span></p>
+	<p class="lead" align="center"><span class="h1">The registration is closed! </span><span class="badge bg-success">NEW</span></p>
 	
-	<div class="container col-xxl-12 mb-5">
-		
-<b>
-Please fill out the following form not later than the 31-st of March 2026. 
-Be careful not to insert special characters in your registration form! 
-</b>
-<br /> <br/> 
-		<form method="post" action="register-check.php" style="color:Black;" >
-          <div class="row g-3">
-            <div class="col-6">
-              <div class="input-group has-validation">
-                <span class="input-group-text">First Name</span>
-                <input type="text" class="form-control" id="firstname" name="firstname" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid firstname is required.
-                 </div>
-               </div>
-            </div>
 
-            <div class="col-6">
-              <div class="input-group has-validation">
-                <span class="input-group-text">Last Name</span>
-                <input type="text" class="form-control" id="lastname" name="lastname" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid lastname is required.
-                 </div>
-               </div>
-            </div>
-            
-            <div class="col-md-6">
-              <div class="input-group has-validation">
-				  <span class="input-group-text">Gender</span>
-				  <select class="form-select" id="gender" name="gender" required>
-					<option value="">Choose...</option>
-					<option>Female</option>
-					<option>Male</option>
-					<option>Other</option>
-				  </select>
-				  <div class="invalid-feedback">
-					Please select a gender.
-				  </div>
-			  </div>
-            </div>
+<div>
+  
+</div>
 
-            <div class="col-md-6">
-              <div class="input-group has-validation">
-				  <span class="input-group-text">Title</span>
-				  <select class="form-select" id="title" name="title" required>
-					<option value="">Choose...</option>
-					<option>Prof.</option>
-					<option>Dr.</option>
-					<option>Ph.D. Student</option> 
-					<option>Other</option>
-				  </select>
-				  <div class="invalid-feedback">
-					Please select a valid title.
-				  </div>
-			  </div>
-            </div>
-
-            <div class="col-12">
-              <div class="input-group has-validation">
-                <span class="input-group-text">Affiliation (Institution and Department)</span>
-              <input type="text" class="form-control" id="affiliation" name="affiliation" required>
-              <div class="invalid-feedback">
-                Please enter your affiliation.
-              </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="input-group has-validation">
-                <span class="input-group-text">Affiliation Address</span>
-              <input type="text" class="form-control" id="address" name="address" required>
-              <div class="invalid-feedback">
-                Please enter your affiliation address.
-              </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="input-group has-validation">
-                <span class="input-group-text">Citizenship</span>
-                <input type="text" class="form-control" id="citizenship" name="citizenship" required>
-              <div class="invalid-feedback">
-                  Your citizenship is required.
-                </div>
-              </div>
-            </div>
-
-            
-            <div class="col-12">
-              <div class="input-group has-validation">
-                <span class="input-group-text">Email</span>
-                <input type="text" class="form-control" id="email" name="email" required>
-              <div class="invalid-feedback">
-                  Your email is required.
-                </div>
-              </div>
-            </div>
-            
-            
-          <hr class="my-4">
-
-          <h5>Do you intend to present a talk (20 MIN): </h5>
-
-          <div>
-            <div class="form-check">
-              <input id="talkyes" name="talk" type="radio" class="form-check-input" value="Yes" onclick="myFunction()">
-              <label class="form-check-label" for="talkyes">Yes</label>
-            </div>
-            <div class="form-check">
-              <input id="talkno" name="talk" type="radio" class="form-check-input" value="No" checked onclick="myFunction()">
-              <label class="form-check-label" for="talkno">No</label>
-            </div>
-          </div>
-          
-			<div class="col-12 talkform" style="display:none;">
-			  <div class="input-group has-validation">
-				<span class="input-group-text">Title</span>
-				<input type="text" class="form-control" id="talkTitle" name="talk_title">
-			  <div class="invalid-feedback">
-				  Your talk title is required.
-				</div>
-			  </div>
-			</div>
-			
-			<div class="col-12 talkform" style="display:none;">
-			  <div class="input-group has-validation">
-				<span class="input-group-text">Abstract</span>
-				<textarea class="form-control" id="tallkAbstract" name="talk_abstract"></textarea>
-			  <div class="invalid-feedback">
-				  Your talk abstract is required.
-				</div>
-			  </div>
-			</div>
-
-          <h5>Do you intend to present a poster: </h5>
-          <div>
-            <div class="form-check">
-              <input id="posteryes" name="poster" type="radio" class="form-check-input" value="Yes" onclick="myFunction()">
-              <label class="form-check-label" for="posteryes">Yes</label>
-            </div>
-            <div class="form-check">
-              <input id="posterno" name="poster" type="radio" class="form-check-input" value="No" checked  onclick="myFunction()">
-              <label class="form-check-label" for="posterno">No</label>
-            </div>
-          </div>
-          
-			<div class="col-12 posterform" style="display:none;">
-			  <div class="input-group has-validation">
-				<span class="input-group-text">Title</span>
-				<input type="text" class="form-control" id="posterTitle" name="poster_title">
-			  <div class="invalid-feedback">
-				  Your poster title is required.
-				</div>
-			  </div>
-			</div>
-			<div class="col-12 posterform" style="display:none;">
-			  <div class="input-group has-validation">
-				<span class="input-group-text">Abstract</span>
-				<textarea class="form-control" id="posterAbstract" name="poster_abstract"></textarea>
-			  <div class="invalid-feedback">
-				  Your poster abstract is required.
-				</div>
-			  </div>
-			</div>
-          <hr class="my-4">
-
-		  <p style="display:none;">Leave this empty: <input type="text" name="url" /></p>
-          <button class="w-100 btn btn-primary btn-lg" type="submit">Register</button>
-          </div>
-        </form>
-        
-	</div>
-	
-	<footer class="footer mt-auto py-3 bg-dark">
+ <footer class="footer mt-auto py-3 bg-dark">
 	  <div class="container">
 		<p class="text-info">For any request please contact: <span class="fw-bold">celmec (at) mat.uniroma2.it</span></p>
 	  </div>
